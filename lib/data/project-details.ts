@@ -256,29 +256,29 @@ function baseDetailsFromListItem(p: ProjectListItem): ProjectDetails {
       {
         id: `${p.id}-t1`,
         name: "Audit existing flows",
-        startDate: new Date(2025, 11, 26),
-        endDate: new Date(2025, 11, 27),
+        startDate: new Date(2025, 11, 22), // Mon
+        endDate: new Date(2025, 11, 23),   // Tue
         status: "done",
       },
       {
         id: `${p.id}-t2`,
         name: "Redesign onboarding & payment",
-        startDate: new Date(2025, 11, 28),
-        endDate: new Date(2025, 11, 30),
+        startDate: new Date(2025, 11, 23), // Tue
+        endDate: new Date(2025, 11, 25),   // Thu
         status: "in-progress",
       },
       {
         id: `${p.id}-t3`,
         name: "Usability testing",
-        startDate: new Date(2025, 11, 30),
-        endDate: new Date(2026, 0, 1),
+        startDate: new Date(2025, 11, 25), // Thu
+        endDate: new Date(2025, 11, 27),   // Sat
         status: "planned",
       },
       {
         id: `${p.id}-t4`,
         name: "Iterate based on feedback",
-        startDate: new Date(2026, 0, 1),
-        endDate: new Date(2026, 0, 2),
+        startDate: new Date(2025, 11, 27), // Sat
+        endDate: new Date(2025, 11, 28),   // Sun
         status: "planned",
       },
     ],
