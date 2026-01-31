@@ -128,7 +128,7 @@ function TeammatesSettingsPane() {
                             <SelectItem value="admin">Admin</SelectItem>
                         </SelectContent>
                     </Select>
-                    <Button type="button" className="sm:w-auto">
+                    <Button type="button" size="lg" className="sm:w-auto rounded-lg">
                         Invite
                     </Button>
                 </div>
@@ -190,7 +190,7 @@ export function SettingsDialog({ open, onOpenChange }: SettingsDialogProps) {
                                                     type="button"
                                                     onClick={() => setActiveItemId(item.id)}
                                                     className={cn(
-                                                        "flex items-center justify-between rounded-md px-2.5 py-2 text-left text-[15px] text-muted-foreground hover:bg-accent hover:text-foreground",
+                                                        "flex cursor-pointer items-center justify-between rounded-md px-2.5 py-2 text-left text-[15px] text-muted-foreground hover:bg-accent hover:text-foreground",
                                                         isActive && "bg-accent text-foreground",
                                                     )}
                                                 >
@@ -740,7 +740,7 @@ function ImportSettingsPane() {
                                 <button
                                     type="button"
                                     className={cn(
-                                        "flex items-center gap-2 rounded-full border px-3 py-1",
+                                        "flex cursor-pointer items-center gap-2 rounded-full border px-3 py-1",
                                         isActive
                                             ? "border-primary/50 bg-primary/10 text-primary"
                                             : "border-border text-muted-foreground",
@@ -841,7 +841,7 @@ function TypesSettingsPane() {
                                 type="button"
                                 onClick={() => setActiveType(item.id)}
                                 className={cn(
-                                    "flex w-full items-center gap-2 px-4 py-3 text-sm transition",
+                                    "flex w-full cursor-pointer items-center gap-2 px-4 py-3 text-sm transition",
                                     activeType === item.id
                                         ? "bg-primary/10 text-primary"
                                         : "text-muted-foreground hover:bg-muted/40",
@@ -872,7 +872,7 @@ function TypesSettingsPane() {
                                 <div key={group.id} className="space-y-3">
                                     <div className="flex items-center justify-between text-xs font-semibold uppercase tracking-wide text-muted-foreground">
                                         <span>{group.label}</span>
-                                        <button type="button" className="text-muted-foreground hover:text-foreground">
+                                        <button type="button" className="cursor-pointer text-muted-foreground hover:text-foreground">
                                             <Plus className="h-4 w-4" />
                                         </button>
                                     </div>
@@ -984,7 +984,7 @@ function NotificationsSettingsPane() {
                             key={card.id}
                             type="button"
                             className={cn(
-                                "flex flex-col gap-2 rounded-2xl border px-4 py-4 text-left transition shadow-sm",
+                                "flex cursor-pointer flex-col gap-2 rounded-2xl border px-4 py-4 text-left transition shadow-sm",
                                 card.highlighted
                                     ? "border-primary/40 bg-primary/5 text-foreground"
                                     : "border-border bg-card/60 text-foreground",
